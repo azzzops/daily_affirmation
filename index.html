@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        overflow: clip;
+        min-height: 100vh;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .c {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        padding: 20px;
+        width: 70%;
+        height: 70%;
+        min-height: 400px;
+        max-width: 500px;
+        border-radius: 30px;
+        background-color: whitesmoke;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+
+        h1 {
+          font-family: "Tahoma", sans-serif;
+          font-size: 40px;
+          color: rgb(40, 35, 35);
+        }
+
+        button {
+          cursor: pointer;
+          font-size: 14px;
+          font-family: "Tahoma", sans-serif;
+          font-weight: bold;
+          color: white;
+          background: linear-gradient(
+            80deg,
+            #9a658b67,
+            rgba(146, 118, 185, 0.426)
+          );
+          padding: 20px 10px;
+          border-radius: 30px;
+          border: none;
+        }
+      }
+      .ab {
+        max-width: calc(500px / 2);
+        width: 100%;
+        min-height: calc(400px / 2);
+        height: 70%;
+      }
+      #display_text {
+        font-weight: bold;
+        font-family: "Tahoma", sans-serif;
+        text-align: center;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="c">
+      <h1>Daily Affirmations</h1>
+      <div class="ab">
+        <p id="display_text"></p>
+      </div>
+      <button onclick="showAffirm()">Show Affirmations</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
